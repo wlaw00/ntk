@@ -1,0 +1,41 @@
+:root {
+  --dark: #1f2429;
+  --accent: #9b6f3b;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
+}
+
+.header {
+  background: var(--dark);
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+nav a {
+  color: white;
+  margin: .5rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: var(--accent);
+}
+
+.footer {
+  background: var(--dark);
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
