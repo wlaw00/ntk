@@ -1,11 +1,24 @@
 <header class="header">
-  <img src="{{ '/assets/images/logo.png' | relative_url }}" class="logo" alt="NTK logo">
+  <div class="logo-container">
+    <a href="{{ '/' | relative_url }}" style="color: inherit; text-decoration: none; display: flex; align-items: center;">
+      <!-- Zorg dat je een logo.png in assets/images/ hebt, anders wordt tekst getoond -->
+      <span>NTK</span>
+    </a>
+  </div>
+
   <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/about/' | relative_url }}">Over</a>
-    <a href="{{ '/repertoire/' | relative_url }}">Repertoire</a>
-    <a href="{{ '/media/' | relative_url }}">Media</a>
-    <a href="{{ '/team/' | relative_url }}">Team</a>
-    <a href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
+    <div class="nav-links">
+      {% for item in site.navigation %}
+        <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}active{% endif %}">
+          {{ item.title }}
+        </a>
+      {% endfor %}
+    </div>
+    
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
   </nav>
 </header>
