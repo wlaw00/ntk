@@ -4,7 +4,7 @@ description: >- # dit zorgt ervoor dat de beschrijving op één regel komt
   Het Nationaal Trombonekoor is een levendig ensemble van trombonisten uit heel Nederland. 
   Wij brengen muziek met kwaliteit, humor en plezier.
 baseurl: "/" # de subpath van je site, bijv. /blog
-url: "wlaw00.github.com/ntk" # de basis hostnaam & protocol voor je site, bijv. http://example.com
+url: "wlaw00.github.io/ntk" # de basis hostnaam & protocol voor je site, bijv. http://example.com
 
 # Build settings
 markdown: kramdown
