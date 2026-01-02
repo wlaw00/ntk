@@ -1,31 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-<meta charset="UTF-8">
-<title>Contact</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-
-<button class="menu-toggle">☰</button>
-<nav class="sidebar">
-<h2>NTK</h2>
-<a href="index.html">Home</a>
-<a href="gallery.html">Galerij</a>
-<a href="contact.html">Contact</a>
-</nav>
-
+<html lang="nl"><head><meta charset="UTF-8"><title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<button class="menu-toggle">☰</button><button class="lang-toggle">EN</button>
+<nav class="sidebar"><h2>NTK</h2><a href="index.html">Home</a>
+<a href="gallery.html">Galerij</a><a class="active" href="contact.html">Contact</a></nav>
 <main class="content">
-<h1>Boekingen</h1>
-<form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
-<label>Naam<input type="text" name="name" required></label>
-<label>Email<input type="email" name="email" required></label>
-<label>Bericht<textarea name="message" required></textarea></label>
-<button type="submit">Versturen</button>
-</form>
-</main>
-
-<script src="assets/js/menu.js"></script>
-</body>
-</html>
+<form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+<input name="name" placeholder="Naam" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Bericht"></textarea>
+<button>Versturen</button></form></main>
+<script src="assets/js/site.js"></script></body></html>
