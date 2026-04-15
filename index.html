@@ -1,127 +1,200 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<title>Nationaal TromboneKoor</title>
-<meta name="description"
-      content="Nationaal TromboneKoor – uniek trombone-ensemble uit Nederland, klaar om uw evenement te transformeren in een hilarische muzikale reis.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3&display=swap"
-      rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <title>Nationaal TromboneKoor</title>
+  <meta name="description" content="Nationaal TromboneKoor – uniek trombone-ensemble uit Nederland, klaar om uw evenement te transformeren in een hilarische muzikale reis.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- Menu‑ en taalknop -->
-<button class="menu-toggle">☰</button>
-<button class="lang-toggle">EN</button>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">NTK</div>
+      <nav class="nav-links">
+        <a href="#hero" data-nl="Home" data-en="Home">Home</a>
+        <a href="#about" data-nl="Over NTK" data-en="About NTK">Over NTK</a>
+        <a href="#repertoire" data-nl="Repertoire" data-en="Repertoire">Repertoire</a>
+        <a href="#gallery" data-nl="Galerij" data-en="Gallery">Galerij</a>
+        <a href="#contact" data-nl="Contact" data-en="Contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-toggle" aria-label="Toggle language">EN</button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<!-- Sidebar -->
-<nav class="sidebar">
-  <h2>NTK</h2>
-  <a class="active" href="index.html">Home</a>
-  <a href="gallery.html">Galerij</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <!-- Mobile Sidebar Menu -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>NTK</h2>
+      <button class="close-sidebar">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="sidebar-links">
+      <a href="#hero" class="nav-item" data-nl="Home" data-en="Home">Home</a>
+      <a href="#about" class="nav-item" data-nl="Over NTK" data-en="About NTK">Over NTK</a>
+      <a href="#repertoire" class="nav-item" data-nl="Repertoire" data-en="Repertoire">Repertoire</a>
+      <a href="#gallery" class="nav-item" data-nl="Galerij" data-en="Gallery">Galerij</a>
+      <a href="#contact" class="nav-item" data-nl="Contact" data-en="Contact">Contact</a>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay"></div>
 
-<main class="content">
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-badge reveal-slide-up" data-nl="Hét Nederlandse Trombone Ensemble" data-en="The Dutch Trombone Ensemble">Hét Nederlandse Trombone Ensemble</div>
+        <h1 class="reveal-slide-up" data-nl="Nationaal TromboneKoor" data-en="National Trombone Choir">Nationaal TromboneKoor</h1>
+        <p class="subtitle reveal-slide-up" data-nl="Een leger aan trombonisten" data-en="An army of trombonists">Een leger aan trombonisten</p>
+        <p class="tagline reveal-slide-up" data-nl="Van klassieke koralen tot een heuze decibel-contest: Onze muzikale expressie kent geen grenzen!" data-en="From classical chorales to a true decibel contest: Our musical expression knows no bounds!">Van klassieke koralen tot een heuze decibel-contest: Onze muzikale expressie kent geen grenzen!</p>
+        <div class="hero-actions reveal-slide-up">
+            <a href="#contact" class="btn primary" data-nl="Boek ons nu" data-en="Book us now">Boek ons nu</a>
+            <a href="#repertoire" class="btn secondary" data-nl="Ontdek de muziek" data-en="Discover the music">Ontdek de muziek</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Hero -->
-  <section class="hero fade">
-    <h1 data-nl="Nationaal TromboneKoor" data-en="National Trombone Choir">Nationaal TromboneKoor</h1>
-    <p data-nl="Energie, humor en muzikaliteit met trombones."
-       data-en="Energy, humor and musicality with trombones."></p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-title reveal-fade" data-nl="Over ons" data-en="About Us">Over ons</h2>
+            <div class="title-underline reveal-fade"></div>
+            <p class="reveal-fade" data-nl="Het Nationaal TromboneKoor bestaat uit trombonisten uit heel Nederland. Op zoek naar een band die uw feest laat bruisen met swingende deuntjes of louter polkamuziek? Wij staan altijd klaar om uw evenement te veranderen in een hilarische muzikale reis!" data-en="The National Trombone Choir consists of trombonists from all over the Netherlands. Looking for a band that will make your party buzz with swinging tunes or pure polka music? We are always ready to turn your event into a hilarious musical journey!"></p>
+            <p class="reveal-fade" data-nl="Wij zijn gespecialiseerd in het muzikaal begeleiden van evenementen (van hardloopwedstrijden tot bruiloften). Met jazz-, pop- en schlagermuziek krijgen we zelfs de meest stroeve feestgangers op de dansvloer. Laat het Nationaal TromboneKoor uw evenement veranderen in een complete chaos en boek ons vandaag nog!" data-en="We specialize in providing musical accompaniment for events (from running competitions to weddings). With jazz, pop, and schlager music, we get even the most reluctant partygoers on the dance floor. Let the National Trombone Choir turn your event into complete chaos and book us today!"></p>
+            
+            <div class="quote-box reveal-scale">
+              <div class="quote-icon">"</div>
+              <blockquote data-nl="Kwantiteit is ook kwaliteit" data-en="Quantity also equals quality">Kwantiteit is ook kwaliteit</blockquote>
+            </div>
 
-  <!-- Over NTK -->
-  <section class="about-ntk fade">
-    <h2 data-nl="Over NTK" data-en="About NTK">Over NTK</h2>
+            <h3 class="mt-4 reveal-fade" data-nl="Artistiek leider: Michiel de Boer" data-en="Artistic director: Michiel de Boer">Artistiek leider: Michiel de Boer</h3>
+            <p class="reveal-fade" data-nl="Na zijn conservatoriumstudie trombone te Rotterdam wist hij het zeker: het leven draait om de trombone. Elk instrument heeft zijn kwaliteit, maar uiteindelijk draait het om kwantiteit. Met dit gedachtengoed richtte hij zijn eigen trombonekoor op met maar één doel: keiharde trombonemuziek produceren, eindigend met een hoog 'jalala-gehalte'." data-en="After his conservatory studies in trombone in Rotterdam, he was certain: life revolves around the trombone. Every instrument has its quality, but ultimately it's about quantity. With this mindset he founded his own trombone choir with only one goal: to produce blistering trombone music, ending with a high 'jalala-level'."></p>
+          </div>
+          <div class="about-image-wrapper reveal-scale">
+            <div class="about-image">
+              <img src="https://storage.e.jimdo.com/cdn-cgi/image/quality%3D85%2Cwidth%3D1024/image/412134225/f594b20c-4936-4015-bb45-6149ef6599f1.jpg" alt="Nationaal TromboneKoor">
+            </div>
+            <div class="gold-accent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p data-nl="Het Nationaal TromboneKoor bestaat uit trombonisten uit heel Nederland."
-       data-en="The National Trombone Choir consists of trombonists from all over the Netherlands."></p>
+    <!-- Repertoire Section -->
+    <section id="repertoire" class="repertoire section-padding inverse-bg">
+      <div class="container">
+        <div class="text-center">
+            <h2 class="section-title reveal-fade" data-nl="Repertoire" data-en="Repertoire">Repertoire</h2>
+            <div class="title-underline reveal-fade" style="margin: 0 auto 30px;"></div>
+            <p class="mb-4 reveal-fade text-muted" data-nl="Energie, humor en muzikaliteit op z'n hardst." data-en="Energy, humor, and musicality at its loudest."></p>
+        </div>
+        
+        <div class="repertoire-grid">
+          <ul class="rep-list reveal-slide-up">
+             <li><span class="song">Pump It Up</span><span class="artist">Danzel</span></li>
+             <li><span class="song">Bro Hymn</span><span class="artist">Pennywise</span></li>
+             <li><span class="song">Seven Nation Army</span><span class="artist">The White Stripes</span></li>
+             <li><span class="song">YMCA</span><span class="artist">Village People</span></li>
+             <li><span class="song">Eye of the Tiger</span><span class="artist">Survivor</span></li>
+          </ul>
+          <ul class="rep-list reveal-slide-up" style="transition-delay: 0.2s">
+             <li><span class="song">Bella Ciao</span><span class="artist">Traditional</span></li>
+             <li><span class="song">Triumphmarsch</span><span class="artist">Aïda</span></li>
+             <li><span class="song">99 Luftballons</span><span class="artist">Nena</span></li>
+             <li><span class="song">Smoke on the Water</span><span class="artist">Deep Purple</span></li>
+             <li><span class="song">Mambo No. 5</span><span class="artist">Lou Bega</span></li>
+          </ul>
+        </div>
 
-    <p data-nl="Op zoek naar een band die uw feest laat bruisen met swingende deuntjes of louter polkamuziek? Het Nationaal TromboneKoor is een orkest wat altijd klaarstaat om uw evenement te veranderen in een hilarische muzikale reis!"
-       data-en="Looking for a band that will make your party buzz with swinging tunes or pure polka music? The National Trombone Choir is an orchestra always ready to turn your event into a hilarious musical journey!"></p>
+        <div class="text-center mt-5 reveal-fade">
+          <a href="https://open.spotify.com/playlist/2geMbsOkp3BLBbKIOhuUL1?si=f20d9f9e37884c0d" target="_blank" class="btn secondary spotify-btn">
+            <svg viewBox="0 0 24 24" class="icon"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.6 14.6c-.2.3-.6.4-.9.2-2.4-1.5-5.4-1.8-8.9-1-.4.1-.7-.2-.8-.6-.1-.4.2-.7.6-.8 3.8-.9 7.1-.6 9.8 1 .4.2.5.6.2.9zm1.3-2.9c-.3.4-.8.5-1.1.3-2.8-1.7-7-2.2-10.2-1.2-.5.2-1-.1-1.1-.6-.2-.5.1-1 .6-1.1 3.6-1.1 8.3-.6 11.5 1.4.4.3.4.8.3 1.2zm.1-3c-3.3-2-8.8-2.2-12-1.2-.6.2-1.2-.2-1.4-.8-.2-.6.2-1.2.8-1.4 3.7-1.1 9.9-.9 13.7 1.4.5.3.7.9.4 1.4-.2.5-.8.7-1.4.4z"/></svg>
+            <span data-nl="Luister op Spotify" data-en="Listen on Spotify">Luister op Spotify</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <p data-nl="Wij zijn niet alleen gespecialiseerd in het openen van jamsessies, maar ook in het muzikaal begeleiden van hardloopwedstrijden! Met een leger aan trombonisten zorgen we voor een absurdistische draai aan uw feest, terwijl we jazz-, pop- en schlagermuziek spelen die zelfs de meest stroeve feestgangers aan op de dansvloer krijgt."
-       data-en="We are not only specialized in opening jam sessions but also in musically accompanying running competitions! With an army of trombonists we give your party an absurd twist, playing jazz, pop and schlager music that even the most reluctant partygoers will get on the dance floor."></p>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+      <div class="container">
+        <h2 class="section-title reveal-fade" data-nl="Galerij" data-en="Gallery">Galerij</h2>
+        <div class="title-underline reveal-fade"></div>
+        <div class="image-gallery mt-4">
+          <div class="gallery-item reveal-scale">
+            <img src="https://storage.e.jimdo.com/cdn-cgi/image/quality%3D85%2Cwidth%3D1600/image/433156009/22de084c-aae7-4ea7-9a24-bde7019d36dc.jpg" alt="Gallery performance">
+            <div class="item-overlay"></div>
+          </div>
+          <div class="gallery-item reveal-scale" style="transition-delay: 0.2s">
+            <img src="https://storage.e.jimdo.com/cdn-cgi/image/quality%3D85%2Cwidth%3D1440/image/510713121/e0d133e8-8190-4cca-9d2f-06136d03796c.jpg" alt="Gallery performance 2">
+            <div class="item-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p data-nl="Laat het Nationaal TromboneKoor uw bruiloft veranderen in een complete chaos en boek ons vandaag nog. We beloven dat uw gasten nog lang zullen napraten over de bizarre muzikale avond die wij bieden."
-       data-en="Let the National Trombone Choir turn your wedding into a complete chaos and book us today. We promise that your guests will keep talking about the bizarre musical evening we provide."></p>
+    <!-- Partners Section -->
+    <section class="partners section-padding">
+      <div class="container text-center">
+        <h3 class="reveal-fade partner-title" data-nl="Mede mogelijk gemaakt door" data-en="Made possible by">Mede mogelijk gemaakt door</h3>
+        <div class="partners-logos reveal-fade">
+          <span class="partner">Koperblazen.NL</span>
+          <span class="partner divider"></span>
+          <span class="partner">Utrechtse Studenten Bigband</span>
+        </div>
+      </div>
+    </section>
 
-    <p data-nl="Contacteer ons en laat de muzikale Odyssee beginnen!"
-       data-en="Contact us and let the musical odyssey begin!"></p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding inverse-bg">
+      <div class="container">
+        <div class="contact-card reveal-slide-up">
+          <div class="card-bg"></div>
+          <div class="card-content">
+            <h2 class="section-title" data-nl="Boek het NTK!" data-en="Book the NTK!">Boek het NTK!</h2>
+            <div class="title-underline" style="margin: 0 auto 20px;"></div>
+            <p data-nl="Laat de muzikale Odyssee beginnen. Neem contact met ons op via WhatsApp voor boekingen en informatie." data-en="Let the musical odyssey begin. Contact us via WhatsApp for bookings and information."></p>
+            
+            <div class="contact-methods mt-4 text-center">
+              <a href="https://wa.me/31638229590" class="btn primary whatsapp-btn" target="_blank">
+                <svg viewBox="0 0 24 24" class="btn-icon"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.83 3.08 1.27 4.79 1.27 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.46 14.16c-.23.64-1.33 1.23-1.87 1.32-.5.08-1.12.16-3.26-.73-2.58-1.07-4.22-3.71-4.35-3.88-.13-.17-1.04-1.38-1.04-2.63 0-1.25.65-1.87.88-2.12.23-.25.5-.31.67-.31.17 0 .34 0 .49.02.16.01.37-.06.57.42.21.5.73 1.79.8 1.94.06.15.11.31.02.48-.09.17-.13.27-.27.44-.13.15-.28.33-.4.45-.13.13-.27.27-.12.53.15.26.67 1.11 1.44 1.79.99.88 1.81 1.15 2.08 1.28.27.13.43.11.59-.08.16-.19.69-.81.88-1.08.19-.28.37-.23.61-.14.25.09 1.57.74 1.84.87.27.13.45.19.52.3.06.11.06.63-.17 1.27z"/></svg>
+                +31 6 38229590
+              </a>
+              <a href="mailto:info@koperblazen.nl" class="btn secondary">
+                <span data-nl="Stuur een E-mail" data-en="Send an E-mail">Stuur een E-mail</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Tagline -->
-    <h3 data-nl="Het nationaal Trombonekoor" data-en="The National Trombone Choir">Het nationaal Trombonekoor</h3>
-    <blockquote data-nl="Een leger aan trombonisten"
-                data-en="An army of trombonists"></blockquote>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">NTK</div>
+      <p class="footer-copy">&copy; 2026 Nationaal TromboneKoor. <span data-nl="Alle rechten voorbehouden." data-en="All rights reserved.">Alle rechten voorbehouden.</span></p>
+    </div>
+  </footer>
 
-    <!-- Motto’s -->
-    <blockquote data-nl="Onze muzikale expressie kent geen grenzen!"
-                 data-en="Our musical expression knows no bounds!"></blockquote>
-    <blockquote data-nl="Kwantiteit is ook kwaliteit"
-                 data-en="Quantity also equals quality."></blockquote>
-
-    <!-- Achtergrond Michiel de Boer -->
-    <h3 data-nl="Artistiek leider en dirigent" data-en="Artistic director and conductor">Artistiek leider en dirigent</h3>
-    <p data-nl="Na jarenlange ervaring en vele optredens in binnen- en buitenland heeft dirigent Michiel de Boer een nieuw concept: het TromboneKoor. Na zijn conservatoriumstudie trombone te Rotterdam wist hij het zeker; het leven draait uiteindelijk om de trombone. Elk instrument heeft zijn kwaliteit, maar uiteindelijk draait het om kwantiteit. Met dit gedachtengoed heeft hij zijn eigen trombonekoor opgericht met maar één doel: keiharde trombonemuziek produceren om nooit te vergeten, eindigend met een hoog ‘jalala‑gehalte’."
-       data-en="After years of experience and many performances domestically and abroad, conductor Michiel de Boer has created a new concept: the Trombone Choir. After studying trombone at the conservatory in Rotterdam, he was sure of it; life ultimately revolves around the trombone. Every instrument has its quality, but ultimately it's about quantity. With this mindset he founded his own trombone choir with only one goal: to produce hard‑hitting trombone music that will never be forgotten, ending with a high ‘jalala’ level."></p>
-
-    <blockquote data-nl="Laat uw bruiloft veranderen in een complete chaos."
-                 data-en="Let your wedding turn into a complete chaos."></blockquote>
-    <blockquote data-nl="Onze muziek eindigt altijd met een hoog ‘jalala‑gehalte’, want voor ons draait alles om het dynamisch vermogen van de trombone en het aantal decibels die zij gezamenlijk produceren."
-                 data-en="Our music always ends with a high ‘jalala’ level, because for us everything is about the dynamic power of the trombone and the amount of decibels it produces together."></blockquote>
-    <blockquote data-nl="Onder leiding van dirigent Michiel de Boer brengen wij trombonemuziek naar een hoger niveau, waar kwantiteit en kwaliteit samenkomen."
-                 data-en="Under the direction of conductor Michiel de Boer we bring trombone music to a higher level where quantity and quality come together."></blockquote>
-  </section>
-
-  <!-- Repertoire -->
-  <section class="repertoire fade">
-    <h2 data-nl="Repertoire" data-en="Repertoire">Repertoire</h2>
-    <ul>
-      <li data-nl="Triumphmarsch van Aïda" data-en="Triumph March of Aida"></li>
-      <li data-nl="Neun und neunzig luftballon" data-en="Ninety Nine Luftballoon"></li>
-      <li data-nl="Bro hymn" data-en="Bro Hymn"></li>
-      <li data-nl="No limit" data-en="No Limit"></li>
-      <li data-nl="When mom isn’t home - Timmy Trumpet" data-en="When Mom Isn't Home – Timmy Trumpet"></li>
-      <li data-nl="Smoke on the water - Deep purple" data-en="Smoke on the Water – Deep Purple"></li>
-      <li data-nl="Mambo Nr. 5" data-en="Mambo No. 5"></li>
-      <li data-nl="Tequilla" data-en="Tequila"></li>
-      <li data-nl="Jalala" data-en="Jalala"></li>
-    </ul>
-  </section>
-
-  <!-- Missie -->
-  <section class="mission fade">
-    <h2 data-nl="Onze missie" data-en="Our mission">Onze missie</h2>
-    <p data-nl="Missie van het Nationaal TromboneKoor: Verbinden door muzikale passie"
-       data-en="Mission of the National Trombone Choir: Connecting through musical passion."></p>
-
-    <ul>
-      <li><strong data-nl="Entertainment voor iedereen" data-en="Entertainment for everyone">Entertainment voor iedereen</strong> – Wij maken muziek toegankelijk voor een breed publiek, variërend van feesten en bierproeverijen tot carnaval.</li>
-      <li><strong data-nl="Jamsessies en creativiteit" data-en="Jam sessions and creativity">Jamsessies en creativiteit</strong> – We organiseren regelmatig jamsessies waar mensen van alle niveaus kunnen deelnemen en hun muzikale talenten kunnen ontwikkelen.</li>
-      <li><strong data-nl="Humor en positiviteit" data-en="Humor and positivity">Humor en positiviteit</strong> – Met onze kenmerkende absurdistische humor zorgen we voor lach en vreugde bij elk optreden.</li>
-      <li><strong data-nl="Muzikale excellentie" data-en="Musical excellence">Muzikale excellentie</strong> – Ons ensemble bestaat uit getalenteerde trombonisten die professionaliteit hoog in het vaandel dragen.</li>
-      <li><strong data-nl="Straatoptredens in Utrecht" data-en="Street performances in Utrecht">Straatoptredens in Utrecht</strong> – We treden regelmatig op in de binnenstad van Utrecht, zodat onze muziek voor iedereen toegankelijk is.</li>
-    </ul>
-
-    <p data-nl="Samenvattend: onze missie is om mensen te laten glimlachen, dansen en genieten van muzikale momenten die blijvende herinneringen creëren. Wij hopen dat onze muziek mensen samenbrengt en een positieve impact heeft bij elke gelegenheid waar wij optreden."
-       data-en="In short: our mission is to make people smile, dance and enjoy musical moments that create lasting memories. We hope our music brings people together and has a positive impact at every occasion we perform."></p>
-  </section>
-
-  <!-- Sponsors -->
-  <section class="sponsors fade">
-    <h2 data-nl="Sponsors" data-en="Sponsors">Sponsors</h2>
-    <p data-nl="Het Nationaal TromboneKoor is mede mogelijk gemaakt door Koperblazen.NL en de Utrechtse Studenten Bigband."
-       data-en="The National Trombone Choir is made possible by Koperblazen.NL and the Utrecht Student Big Band."></p>
-  </section>
-
-</main>
-
-<!-- Modal -->
-<div class="modal"><img></div>
-
-<script src="assets/js/site.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
